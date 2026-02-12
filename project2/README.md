@@ -44,37 +44,31 @@ Launch instance and download the key pair (mywebserverkey.pem).
 4. chmod 400 mywebserverkey.pem
 ssh -i "mywebserverkey.pem" ec2-user@<EC2-Public-IP>
 4. Install Python and Required Packages
-sudo yum update -y
-sudo yum install python3 -y
-sudo yum install python3-pip -y
-sudo pip3 install flask boto3
+    sudo yum update -y
+    sudo yum install python3 -y
+    sudo yum install python3-pip -y
+    sudo pip3 install flask boto3
 5. Upload Your Flask Application
 
-Create app.py on EC2 using nano app.py or transfer via scp.
+ Create app.py on EC2 using nano app.py or transfer via scp.
 6. Run Flask Application
 sudo python3 app.py
-
-
 Access your app at: http://<EC2-Public-IP> in a browser.
 
 You should see your image loaded from S3.
 7. Test and Verify
 
-Verify Flask server is running and accessible.
+  Verify Flask server is running and accessible.
+  
+  Ensure the image from S3 loads correctly.
+  
+  Take screenshots of:
+  
+  Running Flask server
+  
+  Image loaded from S3
+  
+  EC2 instance details in AWS console
+  
 
-Ensure the image from S3 loads correctly.
-
-Take screenshots of:
-
-Running Flask server
-
-Image loaded from S3
-
-EC2 instance details in AWS console
-
-8. Cleanup (Optional)
-
-Stop or terminate EC2 instance if no longer needed.
-
-Delete S3 bucket objects or bucket if you want to avoid charges.
 
