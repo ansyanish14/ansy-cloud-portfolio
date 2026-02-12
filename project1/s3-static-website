@@ -1,1 +1,9 @@
+## Implementation Steps
+
+1. Created an S3 bucket with a globally unique name.
+2. Disabled Block Public Access settings.
+3. Enabled Static Website Hosting.
+4. Uploaded index.html and image file.
+5. Added bucket policy to allow public read access.
+6. Verified website using S3 endpoint URL.
 
